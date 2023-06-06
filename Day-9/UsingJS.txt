@@ -1,0 +1,4 @@
+- To integrate HTML and JS
+
+- using script tags withing document
+- using external script file 

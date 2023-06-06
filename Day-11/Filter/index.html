@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .main{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4%;
+            gap:10px;
+        }
+    </style>
+</head>
+<!-- Filter the content by gender -->
+<body>
+    <div class="main">
+        
+        <div class="parent">
+            <div class="person" data-gender="male">Ayush</div>
+            <div class="person" data-gender="male">John</div>
+            <div class="person" data-gender="female">Sara</div>
+            <div class="person" data-gender="female">Sara1</div>
+            <div class="person" data-gender="female">Sara2</div>
+            <div class="person" data-gender="female">Sara3</div>
+            <div class="person" data-gender="male">Stark</div>
+           </div>
+       
+           <select name="" id="genderFilter">
+               <option value="all">All</option>
+               <option value="male">Male</option>
+               <option value="female">Female</option>
+           </select>
+       
+           <button id="submit">Filter</button>
+    </div>
+   <script src="index.js"></script>
+</body>
+</html>

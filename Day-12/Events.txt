@@ -1,0 +1,14 @@
+Event handling
+Event propagation
+Event Bubbling
+Event capturing
+
+
+- Event propagation 
+- Whenever event triggers (click , change) , it can propagate through DOM tree from target to anncestor
+- Two phases 
+ - capturing  -> root(parent) to target element (child)
+ - bubbling   -> target element to anncestor (parent or document) 
+ - target phase -> event triggers on target element
+
+

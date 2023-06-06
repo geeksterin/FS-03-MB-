@@ -1,0 +1,53 @@
+1. Intro to js
+2. Node js environment
+3. Installation of node js
+4. Variables
+5. Datatypes
+6. Operators
+7. Loops
+
+
+Javascript
+- Scripting language
+- Loosely Typed
+- Object based
+- To provide the interactivity to web pages
+- Single threaded // keep in hold
+- Synchronous operations
+- make dynamic pages
+- it works Client-side (runs on web browser) and server-side(with the help of nodejs)
+
+
+Node js
+
+- Working or runtime environment of JS
+- Allows to run JS outside browser
+- Environment to build the server side apps
+- Event Driven and non-blocking IO model
+
+npm - node package manager
+- provides modules and packages
+- open source
+- Community is very vast
+
+
+
+Variables in JS
+
+let , var and const
+
+- To store the data (container)
+- Values like numbers , strings , symbols , objects , arrays , functions
+- ES6 introduced let and const
+
+
+Scoping of let , var and const
+
+let and const - Block scope
+var - global or function scope
+
+
+
+var - redeclaration and reinitialisation
+let - reinitilisation
+const - X

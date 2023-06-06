@@ -1,0 +1,15 @@
+Arrays - Sorting , Sliding window , Use of map or objects 
+String - Sorting , use of map or objects , Manipulating
+Memoisation in JS
+Cache and localstorage
+
+
+Day2- Arrays and methods in Arrays
+
+
+- push  and pop
+- shift and unshift
+- slice and splice
+- some and every
+- sort
+

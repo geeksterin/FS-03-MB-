@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+.main{
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    margin-bottom: 40px;
+}
+
+.main-event{
+    display: flex;
+    border: 2px solid rgb(126, 26, 26);
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    gap:4px;
+    flex-direction: column;
+}
+    </style>
+</head>
+<body>
+    <!-- Inline event handling
+    <div class="main" onclick="show()">
+        <button onmouseover="hover()" >Click</button>  
+    </div> -->
+
+    <div class="main-event">
+        <p id="para"></p>
+        <p class="para2"></p>
+        <!-- <button id="btn1">Click</button>  -->
+        <input type="text" id="textinput" placeholder="Type something">
+    </div>
+
+   
+   
+
+
+    <script src="script.js"></script>
+</body>
+</html>

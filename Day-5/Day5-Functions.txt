@@ -1,0 +1,7 @@
+- function
+- types to define it
+- param. function
+- returned function
+- callbacks
+- HOF 
+- Anonymous function

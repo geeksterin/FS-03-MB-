@@ -1,0 +1,16 @@
+// Memory allocation in JS - Garbage collector
+// Hoisting - All declrations(function or variables) goes to top of scope
+// Js engine
+
+
+var arr=[]
+
+......
+
+let i=12
+const = 'hello'
+log(arr)
+
+....
+
+// Garbage collector

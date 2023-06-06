@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .outer{
+        width: 400px;
+        height: 300px;
+        background-color: blue;
+        border: 2px solid black;
+    }
+    .inner{
+        width: 200px;
+        height: 150px;
+        background-color: rgb(57, 183, 66);
+        border: 1px solid black;
+        margin: 40px auto;
+    }
+
+    #outerList{
+        border:1px solid  black
+    }
+</style>
+<body>
+  <!-- <div class="outer">
+      outerdiv
+      
+      <div class="inner">
+         Inner div
+      </div>
+</div>   -->
+<div class="main">
+    <ul id="outerList">
+        <li>
+            List item 1
+             <ul id="innerList">
+                <li>inner 1</li>
+                <li>inner 2</li>
+                <li>inner 3</li>
+             </ul>
+        </li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        </ul>
+        
+</div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>

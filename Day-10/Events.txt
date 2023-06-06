@@ -1,0 +1,20 @@
+- Events
+- Handleevents
+- Eventlistners
+   - onclick - 
+   - onsubmit
+   - onmouseover
+   - onmouseout
+   - keyup
+   - keydown
+   - onchange
+
+
+- Events - Actions or occurences by the user
+  - response - > events trigger 
+- Eventlistners - it handles or reacts to the events 
+
+2 ways -
+   1. Inline Eventlistners / handlers
+   2. Eventlistners
+

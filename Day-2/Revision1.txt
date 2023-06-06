@@ -1,0 +1,12 @@
+- let, var and const
+- scoping of let var and const
+- arrays and its methods
+- string and its methods
+- objects and methods
+- JSON - stringify and parse
+- nested objects , complex objects
+- object prototype
+- functions and its scoping
+- param , anonymous , returned , arrow head 
+- callback and HOF
+[-] destructuring in objects

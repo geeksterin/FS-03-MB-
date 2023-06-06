@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Theme</title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 2%;
+            gap: 10px;
+            flex-direction: column;
+        }
+        button{
+            border-radius: 10%;
+            font-size: 15px;
+            padding: 3px 5px;
+        }
+        .dark-theme{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="test">
+    <div class="container">
+        <h3>Toggle Theme</h3>
+        <button id="theme">Change Theme</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ut adipisci praesentium commodi neque. Ex unde illum tempore iure facilis asperiores repellat, accusantium eveniet nesciunt doloribus eligendi reprehenderit obcaecati? Odit!</p>
+
+    </div>
+
+    <div class="input">
+        <input type="text" id="input1">
+        <button type="submit" id="submit">Submit</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

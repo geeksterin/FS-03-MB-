@@ -1,0 +1,28 @@
+- DOM - Document Object Model 
+- Why DOM?
+- Manipulation of DOM
+- Selector for elements (id , class , tag) 
+- Window and document
+
+
+Document Object Model 
+- Like a api - programming interface for HTML documents
+- in a tree like structure
+- Access and modify the elements
+
+
+Purpose 
+- Manipulating the elements in HTML document
+- Event Handling
+- Representation to web browser
+
+
+- root element - html 
+- element // smallest unit of doc 
+  -starting with tag and end with tag
+- component - reusable code 
+- document  - object
+
+
+- class - dot operator (.)
+- id - (#)

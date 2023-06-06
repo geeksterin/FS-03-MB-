@@ -1,0 +1,45 @@
+- How arrays in different in js from java?
+
+Arrays in java have the elements of homogenous type
+
+String arr[]= new String[];  // java
+ arr= {"hello","world"}
+
+var arr=[1,2,4,"hello","world",true]; // JS
+
+Arrays in js can have heterogenous type 
+
+
+- In js we can store arrays and objects in js array unlike in java
+- Arrays in js are dynamic which means length can be shrink or increased as per add or pop
+- Arrays in Java are static
+
+int arr[]= new int[10];
+
+- we have function as parameter in a function then the param function will be executed
+- left to right params are going to be added to array
+arr.push(45,56,'hello',N,45,N+1)
+
+- Slice in arrays 
+- Doesnt original array
+- slice(startindex,endingindex)  
+- endingindex exclusive
+
+
+// some()
+
+- It is used to check for a certain condition and it should be true atleast once then some() return true
+
+
+
+
+
+
+
+
+
+
+
+
+
+

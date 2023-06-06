@@ -1,0 +1,5 @@
+- Rendering in browser
+  - Page is going to load on browser 
+   - Web server send files html,css,js to browser (HTTP)
+   -browser engine convert to bytes (data)
+   -browser engine to create DOM (Js Representation) and CSS OM

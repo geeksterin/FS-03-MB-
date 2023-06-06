@@ -1,0 +1,4 @@
+- creating DOM elements
+- Appending child to parent element
+- Removing child from parent node 
+

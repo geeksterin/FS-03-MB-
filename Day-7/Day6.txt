@@ -1,0 +1,8 @@
+- Functional programming
+- forEach
+- sort 
+- map
+- filter 
+- reduce
+- closure
+- hoisting
