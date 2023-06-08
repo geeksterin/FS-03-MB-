@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+   --black : #000000;
+   --white : white;
+   --grey: gray;
+}
+
+body,h1,h2{
+    margin: 0px;
+    padding:  0px;
+    font-family: 'Roboto';
+}
+body{
+    background-color: var(--black);
+    color: var(--white);
+}
+.container{
+    padding: 1rem;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+input{
+    font-size: 100%;
+    border-radius: 2px;
+    border-color: transparent;
+}
+
+.emoji{
+    font-size: 250%;
+    width: 6rem;
+    max-width: 6rem;
+
+}
+.aliases{
+    font-size: 140%;
+    text-transform: capitalize;
+}
+.description{
+    font-size: 140%;
+    text-transform: capitalize;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr,td{
+   border-top: 1px solid --var(gray); 
+   border-bottom: 1px solid --var(gray); 
+}
+
+.copy-button{
+    background-color: greenyellow;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.copy-button:hover{
+    background-color: aqua;
+}
+td.copy-button{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+

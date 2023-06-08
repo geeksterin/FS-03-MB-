@@ -1,0 +1,12 @@
+Emoji - Search bar , details(Emoji)
+- functional programming (map,filter,reduce)
+- Autosearch
+- Copy emoji
+
+
+- custom CSS var
+- filter
+- reduce
+- DOM maninpulation
+- Event Handling
+- Navigator clipboard
