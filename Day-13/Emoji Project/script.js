@@ -1,16 +1,28 @@
 const searchForm = document.getElementById('search_form')
-const searchValue = document.getElementById('search_field')
+const searchValue = document.getElementById('search_field') // value from input
 
 const searchEmoji = (event) => {
   event.preventDefault()
   const value = searchValue.value
   displaySearchResults(value)
 }
-
+// 1
 const displaySearchResults = (searchValue = '') => {
+  // default param = ''
   // default ('') -> to see all data at first load
+  // e= {
+  //   emoji: '😀',
+  //   description: 'grinning face',
+  //   category: 'Smileys & Emotion',
+  //   aliases: ['grinning'],
+  //   tags: ['smile', 'happy'],
+  //   unicode_version: '6.1',
+  //   ios_version: '6.0',
+  // }
   const filteredData = emojiList.filter((e) => {
+    // emojiList array
     if (e.tags.some((element) => element.startsWith(searchValue))) {
+      // ''
       return true
     }
     if (e.aliases.some((element) => element.startsWith(searchValue))) {
@@ -39,7 +51,7 @@ const displaySearchResults = (searchValue = '') => {
     btn.innerText = 'copy'
     btn.classList.add('copy-button')
     btn.addEventListener('click', () => {
-      copyEmoji(e.emoji)
+      copyEmoji(e.emoji + e.description) //
     })
     copy_btn.appendChild(btn)
     new_row.appendChild(new_emoji)
@@ -52,7 +64,7 @@ const displaySearchResults = (searchValue = '') => {
 
 const copyEmoji = async (emoji) => {
   try {
-    await navigator.clipboard.writeText(emoji)
+    await navigator.clipboard.writeText(emoji) // copy to clipboard
   } catch (e) {}
 }
 
@@ -64,4 +76,4 @@ searchValue.addEventListener('keyup', (event) => {
   displaySearchResults(value)
 })
 
-window.onload = (_) => displaySearchResults()
+window.onload = (_) => displaySearchResults() // 1
