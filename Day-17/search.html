@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+        .main
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 12px;
+        }
+        select{
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+    <H1>Search and Filter</H1>
+    <div class="main">
+        <div>
+            <input type="text" id="searchInput" placeholder="Search here..">
+            <select name="" id="filter">
+                <option value="all">All</option>
+                <option value="supercar">supercar<option>
+                <option value="commercial">commercial</option>
+                <option value="sports">sports</option>
+            </select>
+        </div>
+       
+        <div id="itemList">
+         <div class="item commercial">Hyundai</div>
+         <div class="item commercial">Suzuki</div>
+         <div class="item commercial">Mahindra</div>
+         <div class="item sports">Lambo</div>
+         <div class="item sports">Ferrari</div>
+         <div class="item supercar">Volkswagen</div>
+         <div class="item supercar">Toyota</div>
+        </div>
+    </div>
+    <script src="SearchandFilter.js"></script>
+</body>
+</html>

@@ -81,7 +81,7 @@ const update = (i, nameVal, scoreVal) => {
   updateRanks()
   generateLeaderboard(leaderboardData)
 }
-
+// input value or placeholder
 const toggleEdit = (index) => {
   var nameField = document.getElementsByClassName('name-field')[index]
   var scoreField = document.getElementsByClassName('score-field')[index]
@@ -97,6 +97,8 @@ const toggleEdit = (index) => {
   } else {
     nameField.style.display = 'none'
     scoreField.style.display = 'none'
+    scoreInput.value = leaderboardData[index].score
+    nameInput.value = leaderboardData[index].name
     scoreInput.style.display = 'inline'
     nameInput.style.display = 'inline'
   }

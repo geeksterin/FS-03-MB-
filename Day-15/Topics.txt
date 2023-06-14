@@ -1,0 +1,30 @@
+- Async programming
+- Callbacks and Callback hell
+- Promises and Async await
+- States in promises
+- Chaining in promises
+
+
+
+Async programming in JS- 
+
+- Concurrent execution of tasks
+- Multiple execution at same time
+- without blocking other tasks
+- callback hell  (drawbacks)
+
+
+Sync -
+Resource allocation  -  X
+Time effiecient   -   X
+
+
+
+
+Promises 
+- Object in JS
+- States  - pending , fulfilled and failure
+- Avoid callback hell
+- then and catch
+
+ 
