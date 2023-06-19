@@ -3,6 +3,32 @@ const form = document.getElementById('form')
 const search = document.getElementById('search')
 const main = document.getElementById('main')
 
+const addRepos = (res) => {
+  const reposList = document.getElementById('repos')
+  // desc order
+  const arr = res
+    .sort((b, a) => a.stargazers_count - b.stargazers_count)
+    .slice(0, 7)
+  console.log(arr)
+
+  arr.forEach((repo) => {
+    // filtered array
+    const ele = document.createElement('a')
+    ele.classList.add('repo')
+    ele.href = repo.html_url
+    ele.innerText = repo.name
+    reposList.appendChild(ele)
+  })
+}
+
+const getRepos = async (username) => {
+  const repoUrl = APIURL + username + '/repos'
+  const res = await fetch(repoUrl)
+  const resData = await res.json()
+  console.log(resData)
+  addRepos(resData)
+}
+
 const getUser = async (username) => {
   // fetch(url)
   try {
@@ -13,6 +39,8 @@ const getUser = async (username) => {
     console.log(data)
 
     createUser(data)
+
+    await getRepos(username) // repos
   } catch (e) {
     console.log(e)
   }
@@ -40,6 +68,8 @@ const createUser = (user) => {
   main.innerHTML = HTMLCard
 }
 
+// star_gazers count
+
 // default behaviour of enter in input box is submit event
 form.addEventListener('submit', (event) => {
   event.preventDefault()
@@ -48,3 +78,4 @@ form.addEventListener('submit', (event) => {
   getUser(user)
   console.log('worked')
 })
+getUser('TecHAyush6476')

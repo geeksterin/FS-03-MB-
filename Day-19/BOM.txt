@@ -1,0 +1,22 @@
+- BOM 
+- Eg
+- document
+- Location
+- History
+- Navigator 
+- Screen
+
+
+BOM - JS api which provide methods and objects to interact with web browser 
+
+document - Object represents the web page loaded on the browser
+
+Location - Location obj represents URL of current webpage ( href or host)
+
+History - Object represents the browser navigation History for current window (back or forward)
+
+Navigator - provides User browser information
+
+Screen - width and height , scroll , colorDepth
+
+
