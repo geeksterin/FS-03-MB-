@@ -1,0 +1,14 @@
+BOM 2
+- local storage
+- session storage
+- setInterval
+- setTimeout
+- clearInt
+
+
+- Signup
+- Login
+- JSON server (Fake API without DB)
+- Auth and Validation 
+- Blog 
+-

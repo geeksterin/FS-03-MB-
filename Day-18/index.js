@@ -38,7 +38,7 @@ const getUser = async (username) => {
     const data = await res.json() // Async operation
     console.log(data)
 
-    createUser(data)
+    createUser(data) // Create HTML elements
 
     await getRepos(username) // repos
   } catch (e) {
@@ -47,6 +47,7 @@ const getUser = async (username) => {
 }
 
 const createUser = (user) => {
+  // DOM manipulation
   const HTMLCard = `<div class="card">    
 <div>
     <img src="${user.avatar_url}" alt="${user.name}" class="avatar"/>

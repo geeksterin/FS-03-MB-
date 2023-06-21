@@ -1,0 +1,14 @@
+- Carousel slider and ADD to cart 
+- Signup and Login -> Blog page (random image api) 
+- JSON server (Fake api) - npm i json-server
+- Axios (CDN link)
+
+
+AXIOS - Handling the HTTP methods
+
+
+
+
+Json server = Fake api (get,post,put,patch,delete)
+
+Database - db.json

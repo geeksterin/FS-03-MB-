@@ -4,6 +4,7 @@ console.log(location.href) // current URL
 
 // history.back()
 
+// meta and SEO
 console.log(navigator.userAgent)
 console.log(navigator.appName)
 console.log(navigator.appVersion)
