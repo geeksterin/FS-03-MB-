@@ -1,4 +1,15 @@
 {
-    "users":[],
-    "blogs":[]
+  "users": [
+    {
+      "username": "ayush",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "username": "rajat",
+      "password": "3443365",
+      "id": 2
+    }
+  ],
+  "blogs": []
 }

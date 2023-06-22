@@ -1,58 +1,66 @@
-// Axios will the normal js object (.json() not required)
-// const axios = require('axios')
-// npm i axios
-// login ->
-// axios
-//   .get('https://api.github.com/users/TecHAyusH6476')
-//   .then((res) => {
-//     console.log(res)
-//     console.log(res.data) // for data or response
-//   })
-//   .catch((err) => {
-//     console.log(err)
-//   })
+const baseUrl = 'http://localhost:3000'
 
-// signup
+function showPopup(message) {
+  const popup = document.createElement('div')
+  popup.classList.add('popup')
+  popup.innerText = message
+  document.body.appendChild(popup)
+  setTimeout(function () {
+    popup.remove()
+  }, 9000)
+}
 
-document.getElementById('signup').addEventListener('submit', (e) => {
+const register = (e) => {
   e.preventDefault()
-  const emailVal = document.getElementById('email').value
-  const passVal = document.getElementById('pass').value
+  var username1 = document.getElementById('username').value
+  var password1 = document.getElementById('password').value
 
-  const user = {
-    email: emailVal,
-    pass: passVal,
+  const usersObj = {
+    username: username1,
+    password: password1,
   }
   axios
-    .post('https://localhost:5000/users', user)
-    .then((res) => {
-      console.log(res)
-      window.alert('Registered!!!')
+    .post(baseUrl + '/users', usersObj)
+    .then(async function (response) {
+      console.log('Signup successful!')
+      //   document.getElementById('signupForm').reset();
+      await showPopup('Registration successful!')
     })
-    .catch((err) => {
-      console.log(err)
+    .catch(function (error) {
+      console.error('Signup failed:', error)
     })
-  window.location.href = 'login.html' // Router
-})
+}
 
-document.getElementById('login').addEventListener('submit', (e) => {
-  e.preventDefault()
+const login = (event) => {
+  event.preventDefault()
+  var loginUsername = document.getElementById('loginUsername').value
+  var loginPassword = document.getElementById('loginPassword').value
 
-  const emailVal = document.getElementById('email').value
-  const passVal = document.getElementById('pass').value
+  axios
+    .get(baseUrl + '/users')
+    .then(function (response) {
+      var users = response.data
+      console.log(users)
+      var user = users.find(function (user) {
+        return (
+          user.username === loginUsername && user.password === loginPassword
+        )
+      })
 
-  axios.get('https://localhost:5000/users').then((res) => {
-    const userData = res.data
-    const isCorrectLogin = userData.find((e) => {
-      return e.email === emailVal && e.pass === passVal
+      if (user) {
+        console.log('Login successful!')
+        showPopup('Login successful!')
+        // window.location.href = 'login.html'
+      } else {
+        console.log('Invalid username or password!')
+        showPopup('Invalid username or password!')
+      }
     })
+    .catch(function (error) {
+      console.error('Login failed:', error)
+    })
+}
 
-    if (isCorrectLogin) {
-      alert('Login success')
-      window.location.href = 'home.html'
-    } else {
-      alert('Wrong credentials')
-      window.location.href = 'login.html'
-    }
-  })
-})
+document.getElementById('signup').addEventListener('click', register)
+
+document.getElementById('loginForm').addEventListener('submit', login)
