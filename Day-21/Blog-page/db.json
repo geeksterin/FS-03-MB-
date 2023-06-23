@@ -9,7 +9,83 @@
       "username": "rajat",
       "password": "3443365",
       "id": 2
+    },
+    {
+      "username": "malaya",
+      "password": "123445",
+      "id": 3
+    },
+    {
+      "username": "sdfsf",
+      "password": "sdf",
+      "id": 4
+    },
+    {
+      "username": "sada",
+      "password": "asda",
+      "id": 5
+    },
+    {
+      "username": "asdas",
+      "password": "asd",
+      "id": 6
+    },
+    {
+      "username": "raman",
+      "password": "1234567",
+      "id": 7
+    },
+    {
+      "username": "fds",
+      "password": "sdf",
+      "id": 8
+    },
+    {
+      "username": "fsdfsf",
+      "password": "sdfsdf",
+      "id": 9
+    },
+    {
+      "username": "fdsfdsf",
+      "password": "sdfsf",
+      "id": 10
     }
   ],
-  "blogs": []
+  "blogs": [
+    {
+      "title": "Blog 1",
+      "id": 1,
+      "description": "This is about blog first"
+    },
+    {
+      "title": "Blog 2",
+      "id": 2,
+      "description": "This is about blog 2"
+    },
+    {
+      "title": "Blog 3",
+      "id": 3,
+      "description": "This is about blog 3"
+    },
+    {
+      "title": "Blog 4",
+      "description": "This is blog 4",
+      "id": 4
+    },
+    {
+      "title": "Blog 5",
+      "description": "This is the description",
+      "id": 5
+    },
+    {
+      "title": "Blog 6",
+      "description": "This is random quote",
+      "id": 6
+    },
+    {
+      "title": "Random blog",
+      "description": "Hi this is random blog here",
+      "id": 7
+    }
+  ]
 }

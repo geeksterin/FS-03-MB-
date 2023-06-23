@@ -2,7 +2,7 @@ const baseUrl = 'http://localhost:3000'
 
 function showPopup(message) {
   const popup = document.createElement('div')
-  popup.classList.add('popup')
+  popup.classList.add('popup') // style
   popup.innerText = message
   document.body.appendChild(popup)
   setTimeout(function () {
@@ -12,19 +12,23 @@ function showPopup(message) {
 
 const register = (e) => {
   e.preventDefault()
+
+  // getting values from form
   var username1 = document.getElementById('username').value
   var password1 = document.getElementById('password').value
 
+  // model for users
   const usersObj = {
     username: username1,
     password: password1,
   }
   axios
     .post(baseUrl + '/users', usersObj)
-    .then(async function (response) {
+    .then(function (response) {
       console.log('Signup successful!')
+      console.log(response)
       //   document.getElementById('signupForm').reset();
-      await showPopup('Registration successful!')
+      if (response.status === 201) showPopup('Registration successful!')
     })
     .catch(function (error) {
       console.error('Signup failed:', error)
@@ -41,6 +45,8 @@ const login = (event) => {
     .then(function (response) {
       var users = response.data
       console.log(users)
+
+      // user validation
       var user = users.find(function (user) {
         return (
           user.username === loginUsername && user.password === loginPassword
@@ -48,9 +54,10 @@ const login = (event) => {
       })
 
       if (user) {
+        sessionStorage.setItem('username', loginUsername)
         console.log('Login successful!')
         showPopup('Login successful!')
-        // window.location.href = 'login.html'
+        window.location.href = 'blogs.html'
       } else {
         console.log('Invalid username or password!')
         showPopup('Invalid username or password!')
