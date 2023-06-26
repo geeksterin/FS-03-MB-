@@ -1,0 +1,8 @@
+- ES6 
+- Closures
+- call , apply and bind
+- module scope - import and export 
+
+
+// Closures are the concepts in js in which the inner functions can access the
+// the var and params of outer function even after outer function have returned
