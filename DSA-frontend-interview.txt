@@ -13,3 +13,11 @@ Day2- Arrays and methods in Arrays
 - some and every
 - sort
 
+
+
+// we have an array , design a method in which it takes the array
+ and remove the duplicates
+
+
+  // bruteforce using for loop
+ // only you can use filter,map,reduce, arrays methods
