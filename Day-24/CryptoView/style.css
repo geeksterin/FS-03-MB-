@@ -56,3 +56,118 @@ body{
     align-items: center;
     margin-top: 0.5rem;
 }
+
+.trending_coins{
+    background-color: azure;
+    height: 130px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    min-width: 350px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.coins_slider{
+    display: flex;
+    gap: 20px;
+    width: 100vw;
+    overflow-y: hidden;
+    padding: 5px 5px;
+}
+
+.coin_name{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.coin_price{
+    font-size: 18px;
+    color: black;
+}
+
+.footer{
+    background-color: rgb(245, 244, 244);
+    color: rgb(0, 0, 0);
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.search{
+    border: 1px solid rgb(244, 213, 10);
+    height: 35px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh-600px);
+    flex-direction: column;
+    gap: 12px;
+    padding: 1%;
+    border-bottom: 1px solid grey;
+    color: orange;
+}
+
+#search_input{
+    height: 30px;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 0px 6px;
+    margin-right: 12px;
+}
+
+#search_button{
+    height: 30px;
+    font-size: 15px;
+    background-color: orange;
+    color: azure;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.coin_box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: lightcyan;
+    padding: 12px 15px;
+    align-items: center;
+    border-radius: 4px;
+
+}
+
+.coin_info{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.coin_image{
+    width: 20px;
+    height: 20px;
+}
+
+.search_coins_container{
+    height: calc(100vh-250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 50px;
+    gap: 15px;
+    overflow-y: scroll;
+}
+
+.search_main_container{
+    overflow: hidden;
+}
