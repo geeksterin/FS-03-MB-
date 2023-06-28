@@ -14,10 +14,15 @@ Day2- Arrays and methods in Arrays
 - sort
 
 
+Interview advance in js -
 
-// we have an array , design a method in which it takes the array
- and remove the duplicates
+1. // we have an array of numbers , design a method in which it takes the array
+ and remove the duplicates and return new array (Only use HOF)
+
+ arr = [1,2,3,3,2,1,3] 
+ o/p = [1,2,3]  //order doesnt matter
 
 
-  // bruteforce using for loop
- // only you can use filter,map,reduce, arrays methods
+  1// bruteforce using for loop (sort)
+  2// only you can use filter,map,reduce,arrays methods (not sort)
+ 

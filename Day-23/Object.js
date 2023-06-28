@@ -26,3 +26,25 @@ console.log(fullname)
 
 const obj = {}
 const { prop = 'na' } = obj // default val to desc key
+
+const personAccount = {
+  fname: '',
+  lname: '',
+  incomes: [
+    {
+      income: 123,
+      desc: 'this is income',
+    },
+    {},
+  ],
+  expenses: [
+    {
+      expense: 233,
+      desc: 'sds',
+    },
+  ],
+  totalincome: function () {
+    const sum = this.incomes.reduce()
+    return sum
+  },
+}

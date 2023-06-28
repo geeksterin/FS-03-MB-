@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: Poppins;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins;
+}
+
+.header{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    align-items: center;
+}
+
+#logo{
+    width: 30px;
+    height: 25px;
+    margin-right: 0.5rem;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.content_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh-300px);  
+    margin-top: 1%;
+    /* remaining height */
+}
+
+#main_image{
+    width: 55vw;
+    height: 55vh;
+}
+#heading_container{
+    padding: 3%;
+}
+
+.coins_container{
+    background-color: aliceblue;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+}

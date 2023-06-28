@@ -1,0 +1,15 @@
+Question: Implement a function called myCall that simulates the functionality of the call method in JavaScript.
+
+Question: Implement a function called myApply that simulates the functionality of the apply method in JavaScript.
+
+Question: Implement a function called myBind that simulates the functionality of the bind method in JavaScript.
+
+Question: Write a function called sum that takes two arguments, a and b, and returns their sum. Use the call method to invoke the sum function with different values.
+
+Question: Write a function called product that takes three arguments, a, b, and c, and returns their product. Use the apply method to invoke the product function with an array of values.
+
+Question: Create an object called calculator with a property called value set to 0. Add a method called add that takes a variable number of arguments and adds them to the value property. Use the apply method to invoke the add method with an array of values.
+
+Question: Write a function called greet that takes a name as an argument and returns a greeting message. Use the bind method to create a new function called greetJohn that always greets the name "John".
+
+Question: Implement a function called delay that takes a function and a delay time in milliseconds as arguments. The function should execute the given function after the specified delay. Use the bind method to create a delayed version of the function.
