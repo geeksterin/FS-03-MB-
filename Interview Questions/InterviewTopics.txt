@@ -1,0 +1,6 @@
+- Basics (let,var,const)
+- Function declaration
+- Arrays , objects , string
+- DOM 
+- Mid Js (DOM Manipulation ) 
+- 

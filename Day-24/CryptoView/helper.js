@@ -112,7 +112,7 @@ const createChart = async (coinId) => {
   const xValues = []
   const yValues = []
   for (const price of jsonData.prices) {
-    const d = new Date(0)
+    const d = new Date(0) // date current format
     d.setUTCMilliseconds(price[0])
     xValues.push(`${d.getHours()}:${d.getMinutes()}`)
     yValues.push(price[1])
@@ -125,6 +125,7 @@ const createChart = async (coinId) => {
         {
           label: 'Price',
           data: yValues,
+          fill: false,
           borderColor: 'blue',
         },
       ],
