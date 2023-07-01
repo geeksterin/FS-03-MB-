@@ -7,37 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="search_main_container">
-        <div class="header">
-            <div class="logo">
-                <img id="logo" src="https://aayusharyan.github.io/cryptoview-project/assets/images/logo.png" alt="logo" />
-                    <h1>CryptoView</h1>
-            </div>
-            <div class="search">
-           <a href="search.html"><button class="search">Search</button></a>
-            </div>
+    <div id="header">
+        <div id="logo_container">
+          <img
+            id="logo"
+            src="https://aayusharyan.github.io/cryptoview-project/assets/images/logo.png"
+            alt="logo"
+          />
+          <h1 id="brand_name">CryptoView</h1>
         </div>
-
-        <div class="action">
-            <h2 class="action_heading">
-                Search Coins
-            </h2>
-            <div class="search_container">
-                <input type="text" id="search_input" placeholder="Search your coin...">
-                <button id="search_button">Search</button>
-            </div>
+        <a href="./search.html"><button id="search_button">Search</button></a>
+      </div>
+      <div id="action_container">
+        <h2 id="action_container_heading">Search Coins</h2>
+        <div id="search_container">
+          <input id="search_input" type="text" placeholder="Search your coin" />
+          <button id="search_input_button">Search</button>
         </div>
- 
-        <div class="search_coins_container">
-            
-        </div>
-
-
-
-    </div>
-
-
-
+      </div>
+      <div id="coins_container">
+        
+      </div>
+      <div id="footer">
+        <h4 id="footer_text"> CryptoView | FS03B</h4>
+      </div>
+      
+    <script src="helper.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id='coinDetail'>Coin-Detail</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo_container">
+        <img
+          id="logo"
+          src="https://aayusharyan.github.io/cryptoview-project/assets/images/logo.png"
+          alt="logo"
+        />
+        <h1 id="brand_name">CryptoView</h1>
+      </div>
+      <a href="./search.html"><button id="search_button">Search</button></a>
+    </div>
+    <div id="main_container">
+      <div id="coin_info_container">
+        <img
+          id="coin_info_icon"
+          src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
+        />
+        <div id="coin_info">
+          <h2 id="coin_info_heading">Bitcoin (BTC)</h2>
+          <div id="coin_pricing_container">
+            <h4 class="coin_pricing">₹ 1393634</h4>
+            <h4 class="coin_pricing">₹ 1393634</h4>
+            <h4 class="coin_pricing">₹ 1393634</h4>
+            <h4 class="coin_pricing">₹ 1393634</h4>
+          </div>
+          <h3 id="coin_description_heading">Description:</h3>
+          <p id="coin_description">
+            The Avalanche Bridge, launched last August, has facilitated over $50B in transfers between Avalanche and Ethereum. Today, the Ava Labs team has added support for the Bitcoin network. Users are now able to transfer Bitcoin to Avalanche C-Chain with in a cheap, seamless manner without having to go through Ethereum. We plan to enable wide adoption of BTC.b across the Avalanche and other ecosystems. Full press release: https://medium.com/avalancheavax/avalanche-bridge-adds-native-bitcoin-support-6306236fb506 Support articles: https://support.avax.network/en/articles/6081464-core-extension-how-do-i-bridge-bitcoin-btc
+          </p>
+        </div>
+      </div>
+      <div id="coin_chart_container">
+        <canvas id="coin_chart" style="width: 100%; max-height: 800px;"></canvas>
+      </div>
+    </div>
+
+    <div id="footer">
+      <h4 id="footer_text"> CryptoView | FS03B</h4>
+    
+    </div>
+
+    <script src="helper.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
